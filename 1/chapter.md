@@ -66,7 +66,7 @@ SECTIONS
     }
 }
 ```
-This linker script links the elf to be loaded at `0xFFFFFFFF80100000` in virtual memory, which qloader2 will do for you when you use stivale.
+This linker script links the elf to be loaded at `0xFFFFFFFF80100000` in virtual memory, which qloader2 will do for you when you use stivale. Don't worry about this address for now, we'll cover it later.
 
 The `ENTRY` tells qloader2 where to start executing in your kernel. For example, with the example `linker.ld`, that will start executing at the symbol `exec_start`.
 
