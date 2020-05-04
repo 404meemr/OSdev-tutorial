@@ -9,7 +9,7 @@
 | NVRAM | Non-Volatile Random Access Memory | Memory that maintains its data even after power loss |
 | BIOS | Basic Input/Output System | Firmware used to bootstrap and control hardware | 
 | MMU | memory Management Unit | Chip that controls all memory access |
-| POST | Power On Self Test | Systems check |
+| POST | Power On Self Test | Systems check performed by the BIOS |
 
 &emsp;When the CPU first starts up, it has no knowledge about anything. The first thing it does is make sure that the power supply is providing a reliable source of power. If not, the CPU will generate a reset signal until it recieves a good supply. A reset signal is similar to turning the CPU off and on again. Right now the CPU doesn't know what peripherals you have, how to talk to your HDDs or SSDs, and not even the existence of RAM. Your computer obviously needs some way to initialize and bootstrap everything, so the CPU jumps to a reset vector. On x86_64 systems, this vector is 0xFFFFFFF0.
 
